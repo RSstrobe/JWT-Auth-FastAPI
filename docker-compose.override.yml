@@ -1,0 +1,13 @@
+# docker-compose.yml
+version: '3'
+
+services:
+  auth:
+    volumes:
+      - ./auth/src/:/opt/src/
+#  db:
+#    ports:
+#      - '5432:5432'
+  postgres_auth:
+    ports:
+      - '5432:5432'
